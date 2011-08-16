@@ -95,3 +95,9 @@ SCRIPT UPDATE plugins.js (add HTML5 Placeholder Fix & InnerShiv)
 SCRIPT UPDATE main.css (replace reset.css include with HTML5 Boilerplate Normalisation CSS reset [http://bit.ly/mKT7nS])
 SCRIPT ADD main_commented.css (add commented version of main.css)
 SCRIPT REMOVE reset.css (depreciated by normalised CSS reset)
+
+Version 1.4
+------------------
+2011-07-04
+
+SCRIPT UPDATE main.css (revert back to reset CSS as Normalisation CSS was gay)

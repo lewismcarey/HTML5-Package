@@ -8,28 +8,41 @@
 
 /* RESET ----------------------------------------------------------------- */
 
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; 
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 
 /* BODY ----------------------------------------------------------------- */
 
-html { font-size: 100%; overflow-y: scroll; -ms-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; }
-body { margin: 0; font-size: 13px; line-height: 1.231; }
+html { 
+	font-size: 100%; overflow-y: scroll; margin: 0; padding: 0;
+	-ms-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);  
+}
+body { margin: 0; background-color: rgb(255,255,255); color: rgb(51,51,51); font: 75% Arial, Helvetica, sans-serif;  }
 body, button, input, select, textarea { font-family: sans-serif; color: rgb(34,34,34); }
 img { border: 0; -ms-interpolation-mode: bicubic; }
+
+/* LINKS ---------------------------------------------------------------- */
+
+a, a:active, a:visited { color: rgb(96,120,144); }
+a:hover { color: rgb(0,0,54); }
+
+a:link { -webkit-tap-highlight-color: rgb(255,94,153); } 
 
 ::-moz-selection{ background: rgb(255,94,153); color: rgb(255,255,255); text-shadow: none; }
 ::selection { background: rgb(255,94,153); color: rgb(255,255,255); text-shadow: none; } 
 
-/* LINKS ---------------------------------------------------------------- */
-
-a { color: color: rgb(96,120,144); }
-a:visited { color: color: rgb(96,120,144); }
-a:focus { outline: thin dotted; }
-
-a:hover, a:active { outline: 0; }
-
 /* TYPOGRAPHY ----------------------------------------------------------- */
+
+p, ul, ol, dl, table, div.vcard, time { font-size: 1em; line-height: 1.5em; } 
+ul p, ol p,
+ul time, ol time, p time, td time { font-size: 1em; }
+p { margin-bottom: 20px; }
 
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
@@ -46,14 +59,20 @@ small { font-size: 85%; }
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+abbr, acronym { border-bottom-width: 0; }
+address { font-style: normal; }
 
 figure { margin: 0; }
 table { border-collapse: collapse; border-spacing: 0; }
 
 /* LISTS ----------------------------------------------------------------- */
 
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-dd { margin: 0 0 0 40px; }
+li ul, li ol { margin-bottom: 1.5em; }
+ul, ol { margin-bottom: 1.5em; }
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
 nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
 
 /* FORMS ----------------------------------------------------------------- */
@@ -76,13 +95,18 @@ input:invalid, textarea:invalid { background-color: rgb(240,221,221); }
 
 /* HEADINGS --------------------------------------------------------------- */
 
-h1 { }
-h2 { }
-h3 { }
-h4 { }
-h5 { }
+h1 { margin-bottom: .5em; font-size: 4em; line-height: 1.1; letter-spacing: -1px; color: rgb(145,183,42); }
+h2 { margin-bottom: .5em; font-size: 3em; line-height: 1.1; letter-spacing: -1px; color: rgb(145,183,42); }
+h3 { margin-bottom: .75em; font-size: 2.5em; line-height: 1.2; color: rgb(145,183,42); }
+h4 { margin-bottom: .75em; font-size: 2em; line-height: 1.2; color: rgb(145,183,42); }
+h5 { margin-bottom: .75em; font-size: 1.5em; line-height: 1.2; color: rgb(145,183,42); }
 
 /* LAYOUT ----------------------------------------------------------------- */
+
+
+
+
+
 
 
 
